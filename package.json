@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "logic-core": "github:white-base/core"
+  }
+}
