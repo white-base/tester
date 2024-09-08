@@ -1,6 +1,7 @@
 {
   "type": "module",
   "dependencies": {
-    "logic-core": "github:white-base/core"
+    "logic-core": "github:white-base/core",
+    "logic-entity": "github:white-base/meta-entity"
   }
 }
