@@ -1,7 +1,12 @@
 {
-  "type": "module",
+  "name": "logic-bind-model-tester",
+  "devDependencies": {
+    "@bufbuild/jest-environment-jsdom": "^0.1.1",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jsdom": "^25.0.0"
+  },
   "dependencies": {
-    "logic-core": "github:white-base/core",
-    "logic-entity": "github:white-base/meta-entity"
+    "logic-bind-model": "^1.0.26"
   }
 }
