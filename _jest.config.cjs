@@ -1,7 +1,7 @@
-export default {
+module.exports = {
     //collectCoverageFrom: ['**/*.[jt]s?(x)', '!**/*.stories.[jt]s?(x)'],
     collectCoverageFrom: ['src/*.js', '!src/_*.js'],
-    // testMatch: ['<rootDir>/test/*.js', '<rootDir>/test/*.test.cjs', '!<rootDir>/test/**/_*.js'],
+    testMatch: ['<rootDir>/test/*.js', '<rootDir>/test/*.test.cjs', '!<rootDir>/test/**/_*.js'],
     // testEnvironment: "@bufbuild/jest-environment-jsdom",
     /*
     coverageThreshold: {
@@ -17,16 +17,16 @@ export default {
         {
           displayName: "CommonJS",
           testEnvironment: "node",
-          testMatch: ["**/test/*.test.cjs"],
+          testMatch: ["**/test/*.cjs.test.js"],
         },
         {
           displayName: "ES Module",
           testEnvironment: "node",
-          testMatch: ["**/test/*.test.js", "**/test/*.test.mjs"],
-          // transform: {
-          //   "^.+\\.js$": "babel-jest",
-            // "^.+\\.mjs$": "babel-jest"
-          // },
+          testMatch: ["**/test/*.test.mjs"],
+          transform: {
+            "^.+\\.js$": "babel-jest",
+            "^.+\\.mjs$": "babel-jest"
+          },
         },
         {
           displayName: "Browser",
@@ -35,7 +35,7 @@ export default {
           //   "^.+\\.js$": "babel-jest",
           //   "^.+\\.mjs$": "babel-jest"
           // },
-          testMatch: ["**/test/*.browser.test.cjs"],
+          testMatch: ["**/test/*.dom.test.js", "**/test/*.browser.test.js"],
         },
       ],
 };

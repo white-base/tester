@@ -1,12 +1,16 @@
 {
-  "name": "logic-bind-model-tester",
+  "name": "logic-core-tester",
+  "type": "module",
+  "scripts": {
+    "test": "node node_modules/.bin/jest"
+  },
   "devDependencies": {
-    "@bufbuild/jest-environment-jsdom": "^0.1.1",
+    "@babel/preset-env": "^7.26.9",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "jsdom": "^25.0.0"
   },
   "dependencies": {
-    "logic-bind-model": "^1.0.26"
+    "logic-core": "github:white-base/core#dev"
   }
 }
