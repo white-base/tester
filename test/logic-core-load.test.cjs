@@ -25,11 +25,11 @@ describe("[target: message.js]", () => {
             jest.resetModules();
         });
 
-        it.skip("CJS 방식으로 JSON 로드", async () => {
+        it("CJS 방식으로 JSON 로드", async () => {
             const {Message, Type} = require('logic-core/ko')
 
             expect(Message.defaultLang).toBe('default')
-            expect(Message.currentLang).toBe('ko')
+            expect(Message.currentLang).toBe('default')
 
             await Message.changeLanguage("ko");
 

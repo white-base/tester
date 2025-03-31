@@ -13,7 +13,7 @@ describe("[logic-core]", () => {
     describe("Message :: 클래스", () => {
         beforeEach(async () => {
             jest.resetModules();
-            // globalThis.isESM = true
+            globalThis.isESM = true
         });
         describe("Message.$storage : 메세지 저장소", () => {
             it("- $storage : 기본 언어 얻기", async () => {
@@ -28,7 +28,7 @@ describe("[logic-core]", () => {
         describe("Message.autoDetect() : 언어자동 설정", () => {
             it("- 한글", async () => {
                 process.env.LANG = 'ko_KR.UTF-8';
-                const {Message} = await import('logic-core');
+                const {Message} = await import('logic-core/ko');
                 await Message.autoDetect()
                 
                 expect(Message.defaultLang).toBe('default')

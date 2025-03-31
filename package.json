@@ -2,7 +2,7 @@
   "name": "logic-core-tester",
   "type": "module",
   "scripts": {
-    "test": "node node_modules/.bin/jest"
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.26.9",

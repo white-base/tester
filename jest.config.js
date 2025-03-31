@@ -31,11 +31,11 @@ export default {
         {
           displayName: "Browser",
           testEnvironment: "jsdom",
-          // transform: {
-          //   "^.+\\.js$": "babel-jest",
+          transform: {
+            "^.+\\.js$": "babel-jest",
           //   "^.+\\.mjs$": "babel-jest"
-          // },
-          testMatch: ["**/test/*.browser.test.cjs"],
+          },
+          testMatch: ["**/test/*.test.browser.cjs"],
         },
       ],
 };
