@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "peerDependencies": {
-    "@logic-entity/product-core": "^1.0.0",
-    "@logic-entity/product-addon-category": "^1.0.0"
+    "@logic-entity/product-core": "https://github.com/white-base/tester.git#prt-v1",
+    "@logic-entity/product-addon-category": "https://github.com/white-base/tester.git#prt-addon-category-v1"
   }
 }
