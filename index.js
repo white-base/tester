@@ -1,8 +1,9 @@
 import { Kysely } from 'kysely';
 import { SQLTable } from 'logic-sql-entity';
+import { sto_master } from '@logic-entity/store-core';
 
 const major = "1.0.0";
-const sto_master = new SQLTable('STO_Master');
+const prt_master = new SQLTable('PRT_Master');
 
 
-export { sto_master, major }
+export { sto_master, prt_master, major }
