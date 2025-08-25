@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "@logic-entity/store-core": "github:white-base/tester#sto-v1"
+  },
+  "peerDependencies": {
+    "@logic-entity/store-core": "^1.0.0"
   }
 }
