@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "@logicfeel/store-core": "^1.0.0"
+  },
+  "peerDependencies": {
+    "@logicfeel/store-core": "^1.0.0"
   }
 }
