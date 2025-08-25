@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@logic-entity/store-core": "github:white-base/tester#sto-v1"
+    "@logicfeel/store-core": "^1.0.0"
   },
   "peerDependencies": {
-    "@logic-entity/store-core": "^1.0.0"
+    "@logicfeel/store-core": "^1.0.0"
   }
 }
