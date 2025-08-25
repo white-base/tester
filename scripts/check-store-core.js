@@ -30,23 +30,6 @@
 // }
 // console.log(`[product-core] store-core version OK: ${storePkg.version}`);
 
-// scripts/check-store-core.js
-const fs = require('fs'), path = require('path');
-function findPkgJson(start) {
-  let dir = start;
-  while (true) {
-    const p = path.join(dir, 'node_modules', '@logicfeel', 'store-core', 'package.json');
-    if (fs.existsSync(p)) return p;
-    const up = path.dirname(dir);
-    if (up === dir) return null;
-    dir = up;
-  }
-}
-const p = findPkgJson(process.cwd());
-if (!p) { console.error('store-core not found'); process.exit(1); }
-const { version } = JSON.parse(fs.readFileSync(p, 'utf8'));
-if (!/^1\./.test(version)) {
-  console.error(`need @logicfeel/store-core ^1, got ${version}`);
-  process.exit(1);
-}
-console.log(`store-core ok: ${version}`);
+
+console.error(`need @logicfeel/store-core, got`);
+process.exit(1);
