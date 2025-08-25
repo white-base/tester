@@ -1,5 +1,5 @@
 {
-  "name": "@logiceel/product-core",
+  "name": "@logicfeel/product-core",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,9 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@logicfeel/store-core": "^1.0.0"
-  },
-  "peerDependencies": {
     "@logicfeel/store-core": "^1.0.0"
   }
 }
